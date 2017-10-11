@@ -51,7 +51,17 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
+  #content {
+    flex-wrap: wrap;
+  }
+  #one, #two {
+   flex: 2;
+   width: 50%;
+  }
 
+  #three {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 800px) {
