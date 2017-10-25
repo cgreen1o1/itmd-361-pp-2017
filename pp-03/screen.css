@@ -29,51 +29,48 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex;
+  flex-direction: column-reverse;
 }
 
 #three,
 #two,
 #one {
-  flex: auto;
-  height: 33.3vw;
+  height: 100vw;
 }
 
 #three {
-  order: 2;
+
 }
 
 #two {
-  order: 1;
+
 }
 
 #one {
-  order: 0;
+
 }
 
 @media screen and (min-width: 600px) {
   #content {
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap-reverse;
   }
-
-  #one, #two {
-    flex: 2;
-    width: 50%;
+  #three,
+  #two,
+  #one {
+    width: 50vw;
+    height: 50vw;
   }
-
   #three {
-    width: 100%;
+    width: 100vw;
+    height: 100vw;
   }
 }
 
 @media screen and (min-width: 800px) {
-  #content {
-    flex-wrap: nowrap;
-  }
-  #one,
+  #three,
   #two,
-  #three {
-    flex: auto;
-    height: 33.3vw;
-    width: 33.3%;
+  #one {
+    flex: 1 0 1vw;
+    height: 33.3333333333vw;
   }
 }
