@@ -48,9 +48,9 @@ console.log(typeof(i)) // should be 'undefined', not 3
 //  as JavaScript comments.
 
 function addTwo(x) {
-  x = x + 2;
-  return x;
+  x = x + 2;  // A variable created inside of a function
+  return x;  //is local to that function
 }
-
+// Variables declared outside of any function are global
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
