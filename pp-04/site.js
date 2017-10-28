@@ -40,7 +40,7 @@ function arrayEach(array, func) {
   }
 }
 
-arrayEach(['red','green','blue'], console.log);
+arrayEach(['red', 'green', 'blue'], console.log);
 
 console.log(typeof(i)) // should be 'undefined', not 3
 
@@ -50,7 +50,7 @@ console.log(typeof(i)) // should be 'undefined', not 3
 
 function addTwo(x) {
   x = x + 2;  // A variable created inside of a function
-  return x;  //is local to that function
+  return x;  // is local to that function
 }
 // Variables declared outside of any function are global
 console.log(addTwo(4)); // 6
