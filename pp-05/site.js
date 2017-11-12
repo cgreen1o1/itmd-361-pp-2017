@@ -9,6 +9,9 @@ $.noConflict();
 
   $('#doorbell').on('click', function() {
     doorbell.play();
-  }
+  });
+
+  $('h1').append(image);
+  $('audio').remove();
 
 })(jQuery);
