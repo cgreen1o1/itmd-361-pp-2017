@@ -14,4 +14,10 @@ $.noConflict();
   $('h1').append(image);
   $('audio').remove();
 
+  $('html').on('keyup', function(e){
+    if (e.which === 68) {
+      doorbell.play();
+    }
+  });
+
 })(jQuery);
