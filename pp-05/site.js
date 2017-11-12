@@ -14,8 +14,7 @@ $.noConflict();
     $('body').append('Doorbell rang for: ' + doorbell.duration + ' seconds\n');
   });
 
-  $('h1').append(image);
-  $('audio').remove();
+  $('audio').hide();
 
   $('html').on('keyup', function(e){
     if (e.which === 68) {
