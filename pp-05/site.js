@@ -11,6 +11,7 @@ $.noConflict();
 
   $('#doorbell').on('click', function() {
     doorbell.play();
+    $('body').append('Doorbell rang for: ' + doorbell.duration + ' seconds\n');
   });
 
   $('h1').append(image);
@@ -19,6 +20,7 @@ $.noConflict();
   $('html').on('keyup', function(e){
     if (e.which === 68) {
       doorbell.play();
+      $('body').append('Doorbell rang for: ' + doorbell.duration + ' seconds\n');
     }
   });
 
