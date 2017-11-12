@@ -28,7 +28,15 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
+#doorbell a {
+  color: black;
+  text-decoration: none;
+}
 
+#doorbell a:active,
+#doorbell a:focus {
+  background-color: yellow;
+}
 
 /* ===== MODULAR STYLES ===== */
 
