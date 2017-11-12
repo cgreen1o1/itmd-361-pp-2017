@@ -8,6 +8,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+/*
+  Setting type with a 4:3 modular scale
+  http://www.modularscale.com/?16&px&1.333
+*/
+
+h1 {
+  font-size: 1.777em; /* 28.43px */
+  line-height: 1.126em;/* 32 / 28.43 = 1.125571579317622*/
+}
 
 img {
   display: block;
