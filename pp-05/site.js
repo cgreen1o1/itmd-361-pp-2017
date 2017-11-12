@@ -7,6 +7,8 @@ $.noConflict();
 
   $('html').removeClass('nojs').addClass('js');
 
+  $('#doorbell').html('<a href="#doorbell">Click to Ring the Doorbell</a><img src="media/doorbell.png">');
+
   $('#doorbell').on('click', function() {
     doorbell.play();
   });
