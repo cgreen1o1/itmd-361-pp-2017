@@ -7,8 +7,7 @@ $.noConflict();
 
   $('html').removeClass('nojs').addClass('js');
 
-  function ringDoorbell() {
-    var doorbell = new Audio('media/doorbell.mp3');
+  $('#doorbell').on('click', function() {
     doorbell.play();
   }
 
