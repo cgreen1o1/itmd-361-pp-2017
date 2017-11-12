@@ -11,7 +11,12 @@ $.noConflict();
 
   $('#doorbell').on('click', function() {
     doorbell.play();
-    $('body').append('Doorbell rang for: ' + doorbell.duration + ' seconds\n');
+    document.getElementById('rang').style.display = 'block';
+    document.body.style.background = 'yellow';
+    setTimeout(function(){
+      document.body.style.background = 'white';
+      document.getElementById('rang').style.display = 'none';
+    }, 2328);
   });
 
   $('audio').hide();
@@ -19,7 +24,12 @@ $.noConflict();
   $('html').on('keyup', function(e){
     if (e.which === 68) {
       doorbell.play();
-      $('body').append('Doorbell rang for: ' + doorbell.duration + ' seconds\n');
+      document.getElementById('rang').style.display = 'block';
+      document.body.style.background = 'yellow';
+      setTimeout(function(){
+        document.body.style.background = 'white';
+        document.getElementById('rang').style.display = 'none';
+      }, 2328);
     }
   });
 

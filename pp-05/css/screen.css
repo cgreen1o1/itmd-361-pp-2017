@@ -45,3 +45,6 @@ body {
 .js img {
   cursor: pointer;
 }
+#rang {
+  display: none;
+}
